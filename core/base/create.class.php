@@ -1,6 +1,15 @@
 <?php
 	class Create{
 		public static function mkFile(){
+			mkdir(ROOT_PATH."/org",0755,true);
+			mkdir(ROOT_PATH."/runtime",0755,true);
+			mkdir(ROOT_PATH."/runtime/cache",0755,true);
+			mkdir(ROOT_PATH."/runtime/compile",0755,true);
+			mkdir(ROOT_PATH."/resource",0755,true);
+			mkdir(ROOT_PATH."/resource/js",0755,true);
+			mkdir(ROOT_PATH."/resource/images",0755,true);
+			mkdir(ROOT_PATH."/resource/css",0755,true);
+			mkdir(ROOT_PATH."/resource/uploads",0755,true);
 			mkdir(ROOT_PATH.APP."/model",0755,true);
 			mkdir(ROOT_PATH.APP."/controller",0755,true);
 			mkdir(ROOT_PATH.APP."/view",0755,true);
